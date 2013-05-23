@@ -15,11 +15,11 @@ guard :rspec do
   watch('app/controllers/application_controller.rb')  { "spec/controllers" }
 
   # Canmoia Concerns
-  watch(%r{^lib/canmoia/(.+)\.rb$})                   { |m| ["spec/#{m[1]}_spec.rb", "spec/concerns/#{m[1]}_spec.rb"] }
+  watch(%r{^lib/canmoia/concerns(.+)\.rb$})                   { |m| ["spec/#{m[1]}_spec.rb", "spec/lib/concerns/#{m[1]}_spec.rb"] }
+  watch(%r{^lib/canmoia/features(.+)\.rb$})                   { |m| ["spec/#{m[1]}_spec.rb", "spec/lib/features/#{m[1]}_spec.rb"] }
 
   # Fabricators
   watch(%r{^spec/fabricators/(.+)\.rb$})              { |m| ["spec/#{m[1]}_spec.rb", "spec/concerns/#{m[1]}_spec.rb", "spec/models/#{m[1]}_spec.rb"] }
-
 
   # Capybara features specs
   watch(%r{^app/views/(.+)/.*\.(erb|haml)$})          { |m| "spec/features/#{m[1]}_spec.rb" }

@@ -1,4 +1,4 @@
 class Order
   include Mongoid::Document
-  include Canmoia::Work
+  include Canmoia::Order
 end

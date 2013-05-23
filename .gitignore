@@ -9,11 +9,11 @@ db/*.sqlite3
 config/database.yml
 config/pubnub.yml
 config/mongoid.yml
-test/dummy/db/*.sqlite3
-test/dummy/config/database.yml
-test/dummy/config/pubnub.yml
-test/dummy/config/mongoid.yml
-test/dummy/config/initializers/smtp.rb
+spec/dummy/db/*.sqlite3
+spec/dummy/config/database.yml
+spec/dummy/config/pubnub.yml
+spec/dummy/config/mongoid.yml
+spec/dummy/config/initializers/smtp.rb
 
 # Monitoring files
 log/*
@@ -21,11 +21,11 @@ tmp/**/*
 public/uploads/*
 public/clicktale/*
 public/uploads/*
-test/dummy/log/*
-test/dummy/tmp/**/*
-test/dummy/public/uploads/*
-test/dummy/public/clicktale/*
-test/dummy/public/uploads/*
+spec/dummy/log/*
+spec/dummy/tmp/**/*
+spec/dummy/public/uploads/*
+spec/dummy/public/clicktale/*
+spec/dummy/public/uploads/*
 
 # Run Commands Files
 .rvmrc
