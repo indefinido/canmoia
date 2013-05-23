@@ -17,19 +17,5 @@ module Canmoia
       notify :responsible, :on => [:open, :close]
       notify :client     , :on => [:open, :accept, :reject, :cancel]
     end
-
-    module CalculationMethods
-      def total
-        @total ||= items.sum(&:value)
-      end
-    end
-
-    # - on :open   , close: :reviewing, cancel: :canceled, notify: :responsible
-    # V on :review, reject: :rejected, accept: :accepted
-    # - on :accept, notify: :buyer
-    # - on :reject, notify: :buyer
-    # - on :cancel, notify: [:buyer, via: :email] }
-    # - on :finish, notify: [:buyer, via: :email] }
-
   end
 end

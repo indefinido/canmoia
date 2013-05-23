@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.authors     = ["Heitor Salazar Baldelli"]
   s.email       = ["heitor@indefini.do"]
   s.homepage    = "http://indefini.do"
-  s.summary     = "Canmoia (can = order, möia = work). The core functionality of Order domain."
+  s.summary     = "Canmöia (can = order, möia = work). The core functionality of Order domain."
   s.description = "The core domain concerns for Orders (Work Orders and Purchase Orders)."
 
   s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
