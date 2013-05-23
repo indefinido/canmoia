@@ -17,6 +17,7 @@ spec/dummy/config/initializers/smtp.rb
 
 # Monitoring files
 log/*
+tmp
 tmp/**/*
 public/uploads/*
 public/clicktale/*
