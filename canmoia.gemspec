@@ -12,11 +12,12 @@ Gem::Specification.new do |s|
   s.homepage    = "http://indefini.do"
   s.summary     = "Canmöia (can = order, möia = work). The core functionality of Order domain."
   s.description = "The core domain concerns for Orders (Work Orders and Purchase Orders)."
+  s.license     = 'WTFP'
 
-  s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
+  s.files = Dir["{app,config,db,lib}/**/*"] + ["WTFP-LICENSE", "Rakefile", "README.md", 'Guardfile']
   s.test_files = Dir["spec/**/*"]
 
-  s.add_dependency "rails", "~> 3.2.13"
+  s.add_dependency "rails", "~> 4.0"
   s.add_dependency "mongoid"
   s.add_dependency "workflow_on_mongoid"
 

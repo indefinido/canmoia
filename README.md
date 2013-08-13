@@ -183,4 +183,4 @@ Extract review order feature from Order concern (Canmoia::Reviewable)
 
 
 
-This project rocks and uses WTFPL-LICENSE.
+This project rocks and uses WTFP-LICENSE.
