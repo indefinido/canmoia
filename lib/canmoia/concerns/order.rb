@@ -18,7 +18,7 @@ module Canmoia
       embeds_many :items
 
       # TODO move to Canmoia::Purchase
-      has_one :client, :class_name => "::User"
+      belongs_to :client, :class_name => "::User"
 
       # Domain Callbacks
       before_validation :calculate_total, :if => :opened?
