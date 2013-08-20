@@ -11,7 +11,7 @@ module Canmoia
 
       # Fields
       # TODO move to Canmoia::Purchase
-      field :state, type: Symbol
+      field :state, type: Symbol, default: :opened
       field :total, type: Float
 
       # Relations

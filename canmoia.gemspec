@@ -1,9 +1,7 @@
 $:.push File.expand_path("../lib", __FILE__)
 
-# Maintain your gem's version:
 require "canmoia/version"
 
-# Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
   s.name        = "canmoia"
   s.version     = Canmoia::VERSION
@@ -17,7 +15,7 @@ Gem::Specification.new do |s|
   s.files = Dir["{app,config,db,lib}/**/*"] + ["WTFP-LICENSE", "Rakefile", "README.md", 'Guardfile']
   s.test_files = Dir["spec/**/*"]
 
-  s.add_dependency "rails", "~> 4.0"
+  s.add_dependency "rails", ">= 3"
   s.add_dependency "mongoid"
   s.add_dependency "workflow_on_mongoid"
 
@@ -34,5 +32,5 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'pry-rails'
   s.add_development_dependency 'guard-rspec'
   s.add_development_dependency 'mongoid-rspec'
-  s.add_development_dependency "sqlite3"
+  s.add_development_dependency 'sqlite3'
 end
