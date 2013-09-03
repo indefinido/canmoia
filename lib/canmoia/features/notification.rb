@@ -35,7 +35,7 @@ module Canmoia
       # TODO create task to generate / update mailer with notification settings
 
       define_method "#{event}!" do |*args|
-        returned = super *args
+        returned = super *args if defined? super
         # TODO better error message when mailer is not found
         # TODO allow specification of custom mailer
         mailer = "#{self.class.name}Mailer".classify.constantize
