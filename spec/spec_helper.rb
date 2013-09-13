@@ -32,10 +32,6 @@ RSpec.configure do |config|
     config.include MailerMacros
   end
 
-  # Fabrication support
-
-
-
   # Database Cleaner support
   config.before(:each) do
     DatabaseCleaner.strategy = :truncation, {:except => %w[  ]}

@@ -1,9 +1,9 @@
 PATH
   remote: .
   specs:
-    canmoia (0.0.1)
+    canmoia (0.0.4)
       mongoid
-      rails (~> 3.2.13)
+      rails (>= 3)
       workflow_on_mongoid
 
 GEM
@@ -185,6 +185,7 @@ DEPENDENCIES
   growl
   guard-rspec
   jquery-rails
+  mongoid
   mongoid-rspec
   pry-rails
   pry-rescue

@@ -14,8 +14,9 @@ module Canmoia
       belongs_to :responsible, :class_name => "::User"
 
       # States Notifications
-      notify :responsible, :on => [:open, :close]
-      notify :client     , :on => [:open, :accept, :reject, :cancel]
+      # TODO implement notification overridness, and then use this defaults
+      # notify :responsible, :on => [:open , :close]
+      # notify :client     , :on => [:close, :accept, :reject, :cancel]
     end
   end
 end

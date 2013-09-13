@@ -1,4 +1,5 @@
-Canmöia
+
+canmöia
 =======
 
 <!---
@@ -20,9 +21,9 @@ Canmöia (can = order, möia = work, work order). The core functionality of the 
 Requirements
 ------------
 
-  - ruby 2.0.0
-  - workflow
-  - currently only support mongoid models
+  - Ruby 2.0.0
+  - Workflow Gem
+  - Currently only support mongoid models
 
 Getting Started
 ---------------

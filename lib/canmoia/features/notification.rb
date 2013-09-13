@@ -13,6 +13,8 @@ module Canmoia
     def notify recipient_attribute = :responsible, on: -> { raise "on is required" }, via: :email
       raise "Recipient named as '#{recipient_attribute}' not found for #{self.name}" unless instance_methods.include? recipient_attribute.to_sym
 
+      on = [on] unless on.kind_of? Array
+
       on.each do |event|
         add_notification_method event, recipient_attribute, via
       end
@@ -34,7 +36,7 @@ module Canmoia
       # TODO only define notification method if method is present on mailer
       # TODO create task to generate / update mailer with notification settings
 
-      define_method "#{event}!" do |*args|
+      define_method "#{event}" do |*args|
         returned = super *args if defined? super
         # TODO better error message when mailer is not found
         # TODO allow specification of custom mailer
