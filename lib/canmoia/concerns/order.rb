@@ -56,7 +56,7 @@ module Canmoia
 
     module CalculationMethods
       def calculate_total
-        self.total = items.sum &:value
+        self.total = items.sum &:price
       end
     end
 
