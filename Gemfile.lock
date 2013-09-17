@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    canmoia (0.1.0)
+    canmoia (0.2.0)
       mongoid
       rails (>= 3)
       workflow_on_mongoid
