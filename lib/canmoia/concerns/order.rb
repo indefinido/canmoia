@@ -52,6 +52,10 @@ module Canmoia
         state :completed
         state :canceled
       end
+
+      def as_json options = {}
+        super options.reverse_merge! include: :items
+      end
     end
 
     module CalculationMethods
