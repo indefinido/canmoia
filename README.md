@@ -120,6 +120,7 @@ The current states and transitions are:
 | accepted    | cancel   | canceled       |
 | rejected    | complete | completed      |
 | rejected    | cancel   | canceled       |
+| rejected    | retry    | reviewing      |
 | completed   | -        | -              |
 | canceled    | -        | -              |
 

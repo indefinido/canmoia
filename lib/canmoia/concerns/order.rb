@@ -47,6 +47,7 @@ module Canmoia
         state :rejected do
           event :complete, transitions_to: :completed
           event :cancel  , transitions_to: :canceled
+          event :retry   , transitions_to: :reviewing
         end
 
         state :completed
